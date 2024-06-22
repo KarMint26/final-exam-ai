@@ -7,6 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from lxml_html_clean import clean_html 
 
 app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 # Download data NLTK (jika belum)
 nltk.download('punkt')
