@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumz AI</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-4 md:p-8">
+    <div
+      class="max-w-md mx-auto md:max-w-2xl bg-white rounded-lg shadow-md p-6 md:p-8"
+    >
+      <h1 class="text-xl md:text-2xl font-semibold mb-4">
+        Masukkan URL Artikel:
+      </h1>
+      <form method="POST" action="/summary" class="flex flex-col md:flex-row">
+        <input
+          type="text"
+          name="url"
+          placeholder="Masukkan URL"
+          required
+          class="mb-4 md:mb-0 md:mr-4 flex-grow rounded-md border border-gray-300 p-2 focus:outline-none focus:ring focus:border-blue-500"
+        />
+        <button
+          type="submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md"
+        >
+          Ringkas
+        </button>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  </body>
+</html>
